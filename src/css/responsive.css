@@ -6,6 +6,7 @@
     .dashboard {
         display: flex;
         flex-direction: column;
+        width: 75%;
     }
 
     .dashboard .menu {
@@ -55,6 +56,6 @@
     }
 
     .dashboard .background .content .time .hours {
-        font-size: 1.3em;
+        font-size: 1.6em;
     }
 }
