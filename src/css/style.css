@@ -63,6 +63,13 @@ body {
     color: #fff;
 }
 
+.dashboard .menu .buttons {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
 .dashboard .sub-titulo a {
     color: #fff;
 }
@@ -126,7 +133,7 @@ body {
     cursor: pointer;
 }
 
-.dashboard .background .content .hours {
+.dashboard .background .content .time .hours {
     margin-bottom: 5px;
     font-weight: 300;
     font-size: 2.6em;
@@ -148,8 +155,8 @@ body {
     align-items: center;
 }
 
-.dashboard .sub-titulo span {
-    font-size: 12px;
+.dashboard .background .content .time span {
+    font-size: 13px;
     font-weight: 400;
 }
 

@@ -1,0 +1,60 @@
+@media (max-width: 500px) {
+    body {
+        margin: 2em 0;
+    }
+    
+    .dashboard {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dashboard .menu {
+        position: static;
+        width: 100%;
+    }
+
+    .dashboard .menu .buttons {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .dashboard .menu .profile {
+        position: static;
+        display: flex;
+        align-items: center;
+        gap: 1em;
+        height: 130px;
+        margin: -1.3em -1.3em 0 -1.3em;
+    }
+
+    .dashboard .menu .profile img {
+        width: 55px;
+        height: 55px;
+        margin-bottom: 0;
+    }
+
+    .dashboard .menu .profile h1 {
+        font-size: 1.1em;
+    }
+
+    .dashboard .background {
+        position: static;
+    }
+
+    .dashboard .background .content {
+        position: static;
+        width: 100%;
+        margin-top: 3em;
+        height: 80%;
+    }
+
+    .dashboard .background .content .time {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .dashboard .background .content .time .hours {
+        font-size: 1.3em;
+    }
+}
