@@ -1,5 +1,5 @@
 body {
-    background-color: hsl(226, 43%, 10%);
+    background-color: var(--bg-body);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -26,7 +26,7 @@ body {
     flex-direction: column;
     justify-content: flex-end;
     gap: 1.2em;
-    background-color: hsl(235, 46%, 20%);
+    background-color: var(--bg-text);
     border-radius: 20px;
     padding: 1.3em;
 }
@@ -37,7 +37,7 @@ body {
 }
 
 .dashboard .menu .profile {
-    background-color: hsl(246, 80%, 60%);
+    background-color: var(--bg-profile);
     position: absolute;
     top: 0;
     left: 0;
@@ -76,37 +76,37 @@ body {
 
 .dashboard .work {
     grid-area: work;
-    background-color: hsl(15, 100%, 70%);
+    background-color: var(--bg-work);
     background-image: url(../images/icon-work.svg);
 }
 
 .dashboard .play {
     grid-area: play;
-    background-color: hsl(195, 74%, 62%);
+    background-color: var(--bg-play);
     background-image: url(../images/icon-play.svg);
 }
 
 .dashboard .study {
     grid-area: study;
-    background-color: hsl(348, 100%, 68%);
+    background-color: var(--bg-study);
     background-image: url(../images/icon-study.svg);
 }
 
 .dashboard .exercise {
     grid-area: exercise;
-    background-color: hsl(145, 58%, 55%);
+    background-color: var(--bg-exercise);
     background-image: url(../images/icon-exercise.svg);
 }
 
 .dashboard .social {
     grid-area: social;
-    background-color: hsl(264, 64%, 52%);
+    background-color: var(--bg-social);
     background-image: url(../images/icon-social.svg);
 }
 
 .dashboard .self-care {
     grid-area: self-care;
-    background-color: hsl(43, 84%, 65%);
+    background-color: var(--bg-self-care);
     background-image: url(../images/icon-self-care.svg);
 }
 
@@ -122,14 +122,14 @@ body {
     height: 160px;
     position: absolute;
     bottom: 0;
-    background-color: hsl(235, 46%, 20%);
+    background-color: var(--bg-text);
     border-radius: 16px;
     padding: 1.3em;
     transition: all .2s ease;
 }
 
 .dashboard .background .content:hover {
-    background-color: hsl(235, 46%, 40%);
+    background-color: var(--bg-text-hover);
     cursor: pointer;
 }
 
@@ -138,6 +138,11 @@ body {
     font-weight: 300;
     font-size: 2.6em;
     color: #fff;
+}
+
+.dashboard .background .content .time .hours::after {
+    content: 'hrs';
+    display: inline-block;
 }
 
 .dashboard a {
