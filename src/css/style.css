@@ -145,6 +145,19 @@ body {
     display: inline-block;
 }
 
+/* .dashboard .background .content .time .hours.daily{
+
+} */
+
+.dashboard .background .content .time span {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.dashboard .background .content .time .esconder{
+    display: none;
+}
+
 .dashboard a {
     color: hsl(236, 100%, 87%);
 }
@@ -160,10 +173,6 @@ body {
     align-items: center;
 }
 
-.dashboard .background .content .time span {
-    font-size: 14px;
-    font-weight: 400;
-}
 
 .footer {
     text-align: center;
