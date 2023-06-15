@@ -156,6 +156,14 @@ body {
 
 .dashboard .background .content .time .esconder{
     display: none;
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.dashboard .background .content .time .mostrar{
+    opacity: 1;
+    transition: all 1s ease;
+    /* nao está funcionando o transition */
 }
 
 .dashboard a {
