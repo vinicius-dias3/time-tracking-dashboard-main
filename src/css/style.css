@@ -133,6 +133,10 @@ body {
     cursor: pointer;
 }
 
+.dashboard .background .content .time{
+    position: absolute;
+}
+
 .dashboard .background .content .time .hours {
     margin-bottom: 5px;
     font-weight: 300;
@@ -144,10 +148,6 @@ body {
     content: 'hrs';
     display: inline-block;
 }
-
-/* .dashboard .background .content .time .hours.daily{
-
-} */
 
 .dashboard .background .content .time span {
     font-size: 14px;
@@ -161,8 +161,10 @@ body {
 }
 
 .dashboard .background .content .time .mostrar{
+    display: block;
     opacity: 1;
     transition: all 1s ease;
+
     /* nao está funcionando o transition */
 }
 
