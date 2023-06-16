@@ -28,19 +28,53 @@ btnDaily.addEventListener('click', function () {
     })    
 })
 
+btnWeekly.addEventListener('click', function () {
+    showHoursWeekly ();
+    showPreviousWeekly ();
+
+    hoursWeekly.forEach(item => {
+        if(item.classList.contains('mostrar')){
+            hideHoursDailyMonthly ();
+        }
+    });
+
+    previousWeekly.forEach(item => {
+        if(item.classList.contains('mostrar')){
+            hidePreviousDailyMonthly ();
+        }
+    });
+});
+
+btnMonthly.addEventListener('click', function () {
+    showHoursMonthly();
+    showPreviousMonthly();
+
+    hoursMonthly.forEach(item => {
+        if(item.classList.contains('mostrar')){
+            hideHoursDailyWeekly();
+        }
+    });
+
+    previousMonthly.forEach(item => {
+        if(item.classList.contains('mostrar')){
+            hidePreviousDailyWeekly();
+        }
+    });
+});
+
 function showHoursDaily (){
     hoursDaily.forEach(item => {
         item.classList.remove('esconder')
         item.classList.add('mostrar')
     });   
-}
+};
 
 function showPreviousDaily () {
     previousDaily.forEach(item => {
         item.classList.remove('esconder')
         item.classList.add('mostrar')
     });
-}
+};
 
 function hideHoursWeeklyMonthly (){
     hoursWeekly.forEach(item => {
@@ -51,7 +85,7 @@ function hideHoursWeeklyMonthly (){
         item.classList.remove('mostrar')
         item.classList.add('esconder')    
     });
-}
+};
     
 function hidePreviousWeeklyMonthly() {
     previousWeekly.forEach(item => {
@@ -62,4 +96,77 @@ function hidePreviousWeeklyMonthly() {
         item.classList.remove('mostrar');
         item.classList.add('esconder');
     });
-}
+};
+
+function showHoursWeekly (){
+    hoursWeekly.forEach(item => {
+        item.classList.remove('esconder')
+        item.classList.add('mostrar')
+    });
+};
+
+function showPreviousWeekly (){
+    previousWeekly.forEach(item => {
+        item.classList.remove('esconder')
+        item.classList.add('mostrar')
+    });
+};
+
+function hideHoursDailyMonthly (){
+    hoursDaily.forEach(item => {
+        item.classList.remove('mostrar')
+        item.classList.add('esconder')
+    });
+    hoursMonthly.forEach(item => {
+        item.classList.remove('mostrar')
+        item.classList.add('esconder')
+    });
+};
+
+function hidePreviousDailyMonthly (){
+    previousDaily.forEach(item => {
+        item.classList.remove('mostrar')
+        item.classList.add('esconder')
+    });
+    previousMonthly.forEach(item => {
+        item.classList.remove('mostrar')
+        item.classList.add('esconder')
+    });
+};
+
+function showHoursMonthly(){
+    hoursMonthly.forEach(item => {
+        item.classList.remove('esconder')
+        item.classList.add('mostrar')
+    });
+};
+
+function showPreviousMonthly(){
+    previousMonthly.forEach(item => {
+        item.classList.remove('esconder')
+        item.classList.add('mostrar')
+    });
+};
+
+function hideHoursDailyWeekly(){
+    hoursDaily.forEach(item => {
+        item.classList.remove('mostrar')
+        item.classList.add('esconder')
+    });
+
+    hoursWeekly.forEach(item => {
+        item.classList.remove('mostrar')
+        item.classList.add('esconder')
+    });
+};
+
+function hidePreviousDailyWeekly(){
+    previousDaily.forEach(item => {
+        item.classList.remove('mostrar')
+        item.classList.add('esconder')
+    });
+    previousWeekly.forEach(item => {
+        item.classList.remove('mostrar')
+        item.classList.add('esconder')
+    });
+};
