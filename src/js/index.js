@@ -2,6 +2,8 @@ const btnDaily = document.getElementById('btn-daily');
 const btnWeekly = document.getElementById('btn-weekly');
 const btnMonthly = document.getElementById('btn-monthly');
 
+const buttons = [btnDaily, btnWeekly, btnMonthly]
+
 const hoursDaily = document.querySelectorAll('.h-daily');
 const hoursWeekly = document.querySelectorAll('.h-weekly');
 const hoursMonthly = document.querySelectorAll('.h-monthly');
@@ -10,8 +12,22 @@ const previousDaily = document.querySelectorAll('.p-daily');
 const previousWeekly = document.querySelectorAll('.p-weekly');
 const previousMonthly = document.querySelectorAll('.p-monthly');
 
+buttons.forEach(button => {
+    button.addEventListener('click', function (){
+        buttons.forEach(btn => {
+            btn.classList.remove('ativado')})
+        this.classList.add('ativado')
+    })
+})
+
 btnDaily.addEventListener('click', function () {
-    
+    btnDaily.classList.add('ativado');
+
+    if(btnDaily.classList.contains('ativado')){
+        btnWeekly.classList.remove('ativado')
+        btnMonthly.classList.remove('ativado')
+    }
+
     showHoursDaily ();       
     showPreviousDaily ();
     
